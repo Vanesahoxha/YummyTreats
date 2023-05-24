@@ -42,5 +42,122 @@
                   
               </div>
               </div>
+
+
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="C:\Users\PC\Desktop\YummyTreats\photos\slider\abhishek-sanwa-limbu-LR559Dcst70-unsplash.jpg" style="width:100%; height:600px;">
+                  <div class="slide-description">
+                    <p style=" font-style: italic;">Appetizer</p>
+                    <h4>Soup Dumplings and Chinese Sticky Rice</h4>
+                    <p>Easy to follow 1 hours recipes that tastes delicious. Spices were bought from India and traded around Europe and Asia. </p>
+                    <button class="read-more-btn">Read More</button>
+                
+                </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="C:\Users\PC\Desktop\YummyTreats\photos\slider\davide-cantelli-jpkfc5_d-DI-unsplash.jpg" style="width:100%; height:600px; object-fit: cover;">
+                  <div class="slide-description">
+                    <p style=" font-style: italic;">Appetizer</p>
+                    <h4>Soup Dumplings and Chinese Sticky Rice</h4>
+                    <p>Easy to follow 1 hours recipes that tastes delicious. Spices were bought from India and traded around Europe and Asia. </p>
+                    <button class="read-more-btn">Read More</button>
+                
+                </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="C:\Users\PC\Desktop\YummyTreats\photos\slider\jay-wennington-N_Y88TWmGwA-unsplash.jpg" style="width:100%; height:600px; object-fit: cover;">
+                  <div class="slide-description">
+                    <p style="font-style: italic;">Appetizer</p>
+                    <h4>Soup Dumplings and Chinese Sticky Rice</h4>
+                    <p>Easy to follow 1 hours recipes that tastes delicious. Spices were bought from India and traded around Europe and Asia. </p>
+                    <button class="read-more-btn">Read More</button>
+                
+                </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="C:\Users\PC\Desktop\YummyTreats\photos\slider\melissa-walker-horn-URSho6okPfs-unsplash.jpg" style="width:100%; height:600px; object-fit: cover;">
+                    <div class="slide-description">
+                        <p style=" font-style: italic;">Appetizer</p>
+                        <h4>Soup Dumplings and Chinese Sticky Rice</h4>
+                        <p>Easy to follow 1 hours recipes that tastes delicious. Spices were bought from India and traded around Europe and Asia. </p>
+                        <button class="read-more-btn">Read More</button>
+                    
+                    </div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="C:\Users\PC\Desktop\YummyTreats\photos\slider\rumman-amin-LNn6O_Mt730-unsplash.jpg" style="width:100%; height:600px; object-fit: cover;">
+                    <div class="slide-description">
+                        <p style=" font-style: italic;">Appetizer</p>
+                        <h4>Soup Dumplings and Chinese Sticky Rice</h4>
+                        <p>Easy to follow 1 hours recipes that tastes delicious. Spices were bought from India and traded around Europe and Asia. </p>
+                        <button class="read-more-btn">Read More</button>
+                    
+                    </div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="C:\Users\PC\Desktop\YummyTreats\photos\slider\spencer-davis-vJsj-hgOEG0-unsplash.jpg" style="width:100%; height:600px; object-fit: cover;">
+                    <div class="slide-description">
+                        <p style="font-style: italic;">Appetizer</p>
+                        <h4>Soup Dumplings and Chinese Sticky Rice</h4>
+                        <p>Easy to follow 1 hours recipes that tastes delicious. Spices were bought from India and traded around Europe and Asia. </p>
+                        <button class="read-more-btn">Read More</button>
+                    
+                    </div>
+                  </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                
+                
+                   
+
+                <script>
+                    //slider
+                    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+                </script>
+
 </body>
 </html>
