@@ -12,6 +12,10 @@ img {vertical-align: middle;}
   src: url('/path/to/nanumgothic.woff2') format('woff2'),
        url('/path/to/nanumgothic.woff') format('woff'),
        url('/path/to/nanumgothic.ttf') format('truetype');
+
+       font-family: 'Lato';
+  src: url('path/to/lato.woff2') format('woff2'),
+       url('path/to/lato.woff') format('woff');
   }
 
 
@@ -218,4 +222,172 @@ padding-left: 5px;
   }
 
   
+  .GeneralContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 0 auto;
+    margin-top:50px;
+
+  }
+
+  .recipesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 ;
+    max-width: 750px;
+    margin-left:20px;
+    background-color: #f2f2f2;
+    padding:20px;
+    margin-left: 70px;;
+    
+  }
   
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  
+  .News1, .News2, .News3 {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    justify-content:flex-start;
+    margin-left:80px;
+    
+  }
+  
+  .Nphoto {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+  }
+  
+  .Nphoto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .Nphoto:hover::before {
+    opacity: 0.6;
+  }
+  
+  .Nphoto img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .Nphoto:hover img {
+    transform: scale(1.05);
+  }
+  
+  .Ndescription {
+    margin-left: 10px;
+    text-align:left;
+    max-width: 4000px;
+    
+  }
+
+  .author{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;;
+  }
+
+  .chefDescritpion{
+    margin-left: 30px;
+    
+  }
+
+  .shefDescriptionp1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .shefDescriptionp2{
+    color:grey;
+  }
+
+  .Ndescription a{
+    text-decoration: none;
+    color:black;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: large;
+   
+  }
+
+  .Ndescription:hover a{
+    text-decoration: underline;
+    color:#071c1d
+  }
+
+  .recipesContainer2{
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .bookContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    background-color: #ffff;
+
+}
+.bookPhoto{
+
+margin-top:20px;
+margin-left:100px;
+margin-bottom:30px;
+
+}
+.bookPhoto img{
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.5);
+}
+
+
+.bookPhoto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+    }
+    .bookPhoto:hover::before {
+    opacity: 0.6;
+    
+    }
+    
+    .bookPhoto img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: 350px;
+    transition: transform 0.3s ease;
+    
+    }
+    
+    .bookPhoto:hover img {
+    transform: scale(1.05);
+
+    }
