@@ -7,50 +7,36 @@
     , initial-scale=1.0">
     <title>Document</title>
     <link href=".dist/output.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="../YummyTreats/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    
-
+  <header>
     <div class="navContainer" id="Ncontainer" >
-        <div class="logo" >
+      <div class="logo" >
             <!-- <img class="logo1" src="YummyLogo.PNG"  > -->
-            <p>YummyTreats</p>
+        <p>YummyTreats</p>
+      </div>
+      <div id="navMenu">
+        <ul id="navMenu1" style="padding-top: 30px;">
+          <li ><a class="" href="#">Home</a> </li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="#">Start here</a></li>
+        </ul>
+
+        <div class="slogan">
+          Delight in Simplicity: Savory Recipes Made Easy
         </div>
-        <div id="navMenu">
-            <ul id="navMenu1" style="padding-top: 30px;">
-  
-
-
+      </div>
+      <div class="mb-3">
                 
-                <li ><a class="" href="#">Home</a> </li>
-                <li><a href="#">Recipes</a> </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Start here</a></li>
-                
-            </ul>
-
-            <div class="slogan">
-                Delight in Simplicity: Savory Recipes Made Easy
-            </div>
-          
-            </div>
-            
-            <div class="mb-3">
-                
-                <input
-                  type="search"
-                  class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-orange-700 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-                  id="SearchNav"
-                  placeholder="Search" 
-                  />
-                  <img src="C:\Users\PC\Desktop\YummyTreats\whiteSearch.png" style="padding-left: 4px; margin-top: 4px; height: 20px; color:white; ">
-                  
-                  
-              </div>
-              </div>
-
+        <input type="search" class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-orange-700 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary" id="SearchNav"
+                  placeholder="Search"/>
+                  <img src="../YummyTreats/whiteSearch.png" style="padding-left: 4px; margin-top: 4px; height: 20px; color:white; ">
+      </div>
+    </div>
+  </header>
               <div class="whatsNew">
                <h4>
                   What's new
@@ -61,7 +47,7 @@
                       <div class="News1">
                         <div class="Nphoto">
                           <a href="cauliflower_recipe.html">
-                            <img src="C:\Users\PC\Desktop\YummyTreats\photos\culiflowerRice.jpeg" style="width:250px">
+                            <img src="../YummyTreats/photos/culiflowerRice.jpeg" style="width:250px">
                           </a>
                         </div>
                         <div class="Ndescription">
@@ -72,7 +58,7 @@
                       <div class="News2">
                         <div class="Nphoto">
                           <a href="belgian_waffle_recipe.html">
-                            <img src="C:\Users\PC\Desktop\YummyTreats\photos\belgian waffle.jpeg" style="width:250px">
+                            <img src="../YummyTreats/photos/belgian waffle.jpeg" style="width:250px">
                           </a>
                         </div>
                         <div class="Ndescription">
@@ -83,7 +69,7 @@
                       <div class="News3">
                         <div class="Nphoto">
                           <a href="sushi_recipe.html">
-                            <img src="C:\Users\PC\Desktop\YummyTreats\photos\sushi.jpeg" style="width:250px">
+                            <img src="../YummyTreats/photos/sushi.jpeg" style="width:250px">
                           </a>
                         </div>
                         <div class="Ndescription">
@@ -93,19 +79,16 @@
                       </div>
                     </div>
                   </div>
-                
-
                   <div class="RecipesListContainer">
                     <div class="recipe-list">
                       <h2 class="title">Collections of Recipes</h2>
                       <ul>
-                        <li><a href="recipe1.html">Instant Pot Recipes</a></li>
-                        <li><a href="recipe2.html">Vegan Recipes</a></li>
-                        <li><a href="recipe3.html">Quick and Easy Recipes</a></li>
-                        <li><a href="recipe4.html">Pasta Recipes</a></li>
-                        <li><a href="recipe5.html">Soup Recipes</a></li>
-                        <li><a href="recipe6.html">Most Popular Recipes</a></li>
-                        
+                        <li><a href="recipe.html">Instant Pot Recipes</a></li>
+                        <li><a href="recipe.html">Vegan Recipes</a></li>
+                        <li><a href="recipe.html">Quick and Easy Recipes</a></li>
+                        <li><a href="recipe.html">Pasta Recipes</a></li>
+                        <li><a href="recipe.html">Soup Recipes</a></li>
+                        <li><a href="recipe.html">Most Popular Recipes</a></li>
                       </ul>
                     </div>
                     <div class="email-signup">
@@ -117,46 +100,35 @@
                       </form>
                     </div>
                   </div>
-
                   <p style="font-weight: 600; margin-left: 160px; margin-top: 80px;  font-family: Shadows Into Light, cursive; font-size: x-large;">Quick Meals</p>
                   <div class="videoContainer">
-                    
                     <div class="pjesa">
                       <div class="Video">
-                        <video src="C:\Users\PC\Desktop\YummyTreats\videos\pexels-t-leish-9020877-3840x2160-25fps.mp4" controls ></video>
+                        <video src="../YummyTreats/videos/pexels-t-leish-9020877-3840x2160-25fps.mp4" controls ></video>
                       </div>
                       <p style="font-style: italic; color: #717171;">Vegan</p>
-                     <a href="#"> <h4 style="font-weight: 400; font-size: larger;">Perfect Avocado Toast For Breakfast</h4></a>
+                      <a href="#"> <h4 style="font-weight: 400; font-size: larger;">Perfect Avocado Toast For Breakfast</h4></a>
                     </div>
                     <div class="pjesa">
                       <div class="Video">
-                        <video src="C:\Users\PC\Desktop\YummyTreats\videos\pexels-tima-miroshnichenko-6329266-3840x2160-25fps.mp4" controls></video>
+                        <video src="../YummyTreats/videos/pexels-tima-miroshnichenko-6329266-3840x2160-25fps.mp4" controls></video>
                       </div>
                       <p style="font-style: italic; color: #717171;">Appetizer</p>
-                    <a href="#">  <h4 style="font-weight: 400; font-size: larger;">Vegan Stuffing With Mushrooms & Nori</h4></a>
+                      <a href="#">  <h4 style="font-weight: 400; font-size: larger;">Vegan Stuffing With Mushrooms & Nori</h4></a>
                     </div>
                     <div class="pjesa">
                       <div class="Video">
-                        <video src="C:\Users\PC\Desktop\YummyTreats\videos\pexels-alleksana-6757672-1920x1080-50fps.mp4" controls></video>
+                        <video src="../YummyTreats/videos/pexels-alleksana-6757672-1920x1080-50fps.mp4" controls></video>
                       </div>
                       <p style="font-style: italic; color: #717171;">Bread</p>
                       <a href="#"><h4 style="font-weight: 400; font-size: larger;">20 Mother’s Day Breakfast And Brunch Recipes</h4></a>
                     </div>
-
-                    
-                    
                   </div>
-
-                  
-                  
-
-
-
                   <div class="bookContainer">
                     <div class="bookPhoto">
                       <a href="#">
-                      <img src="C:\Users\PC\Desktop\YummyTreats\photos\thebook.jpg" >
-                    </a>
+                        <img src="../YummyTreats/photos/thebook.jpg" >
+                      </a>
                     </div>
                     <div class="DescriptionBook">
                       <h2 class="bookTitle">Our New Book Is Here!!!</h2>
@@ -165,31 +137,14 @@
                       <div class="button-container">
                         <a href="#" class="get-book-button">Get Our Book</a>
                       </div>
-                    
                     </div>
                   </div>
-              
-
                   <footer class="footer">
                     <p>&copy; 2023 YummyTreats. All rights reserved.</p>
                     <p>Designed and developed by <a href="#">Vanesa Hoxha</a> & <a href="#">Shkurta Hoxha</a></p>
                   </footer>
-              
-              
-
-                
+                  
               <script>
-
-                
-
-
-      
-
-
-
-
-              
-                
             //   //sticky header
             
             //     window.onscroll = function() {myFunction()};
@@ -205,5 +160,5 @@
             //       }
             //     }
                 </script>
-</body>
+  </body>
 </html>
