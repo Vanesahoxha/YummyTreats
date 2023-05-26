@@ -3,25 +3,26 @@
   }
   
   .mySlides {
-    display: none
+    display: none;
   }
   
   img {
     vertical-align: middle;
   }
   
-    /* @font-face {
-     font-family: 'Inconsolata';
-    src: url('../YummyTreats/fonts/Inconsolata/Inconsolata_Condensed-Regular.ttf') format('truetype'); 
-      
+  /* @font-face {
+      font-family: 'Inconsolata';
+      src: url('/static/Inconsolata-Regular.ttf') format('truetype'),
+           url('/static/Inconsolata-SemiBold.ttf') format('truetype');
   
-     font-family: 'Nanum Gothic';
-    src: url('../YummyTreats/fonts/Nanum/NanumGothic-Bold.ttf') format('truetype'),
-      url('../YummyTreats/fonts/Nanum/NanumGothic-Regular.ttf') format('truetype'),
-      url('../YummyTreats/fonts/Nanum/NanumGothic-ExtraBold.ttf') format('truetype'); 
+           font-family: 'Nanum Gothic';
+    src: url('NanumGothic-Regular.ttf') format('truetype'),
+         url('NanumGothic-Bold.ttf') format('truetype'),
+         url('NanumGothic-ExtraBold.ttf') format('truetype');
   
-  }  */
-   
+         font-family: 'Lato';
+    src: url('/Lato-Regular.ttf') format('truetype'),
+    } */
   
   
   body {
@@ -96,21 +97,19 @@
   
   /* Slideshow container */
   .slideshow-container {
-    max-width: 2000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
-    object-fit: none;
   }
   
   /* Next & previous buttons */
-  .prev,
-  .next {
+  .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
     margin-top: -22px;
+    padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -164,12 +163,9 @@
     }
   
     to {
-      opacity: 1 
+      opacity: 1
     }
   }
-  .fade:not(.show) {
-    opacity: 1 !important;
-}
   
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
@@ -182,15 +178,6 @@
   }
   
   /*mbishkrimi slider*/
-  
-  .slideshow-container {
-    position: relative;
-  
-  }
-  
-  .mySlides {
-    display: none;
-  }
   
   .slide-image {
     position: relative;
@@ -267,6 +254,7 @@
     padding: 20px;
     margin-left: 70px;
     ;
+    padding-bottom: 65px;
   
   }
   
@@ -296,7 +284,7 @@
   
   .Nphoto::before {
     content: "";
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -342,7 +330,7 @@
   }
   
   .shefDescriptionp1 {
-    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
   }
   
@@ -351,7 +339,7 @@
   }
   
   .Ndescription a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     margin-top: 10px;
     margin-bottom: 0;
@@ -359,8 +347,10 @@
   
   }
   
+  
+  
   .Ndescription:hover a {
-    text-decoration: underline;
+    text-decoration: wavy;
     color: #071c1d
   }
   
@@ -379,7 +369,7 @@
   
   .bookPhoto {
   
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 100px;
     margin-bottom: 30px;
   
@@ -387,7 +377,7 @@
   
   .bookPhoto img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     overflow: hidden;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
   }
@@ -414,8 +404,8 @@
   .bookPhoto img {
     display: block;
     width: 100%;
-    max-width: 250px;
-    height: 350px;
+    max-width: 300px;
+    height: 400px;
     transition: transform 0.3s ease;
   
   }
@@ -423,4 +413,39 @@
   .bookPhoto:hover img {
     transform: scale(1.05);
   
+  }
+  
+  .fade:not(.show) {
+    opacity: 1 !important;
+  }
+  
+  .page-link {
+    color: black;
+  }
+  .pagination {
+  
+    margin-top: 40px;
+    margin-left: 300px;
+  }
+  
+  /*footer*/
+  .footer {
+    background-color: #0F3D3E;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
   }

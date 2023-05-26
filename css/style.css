@@ -11,19 +11,6 @@ img {
 }
 
 
-@font-face {
-  font-family: 'Inconsolata';
-  src: url('/YummyTreats/fonts/Inconsolata/Inconsolata_Condensed-Regular.ttf') format('truetype');
-    
-
-  font-family: 'Nanum Gothic';
-  src: url('/YummyTreats/fonts/Nanum/NanumGothic-Bold.ttf') format('truetype'),
-    url('/YummyTreats/fonts/Nanum/NanumGothic-Regular.ttf') format('truetype'),
-    url('/YummyTreats/fonts/Nanum/NanumGothic-ExtraBold.ttf') format('truetype');
-
-
-}
-
 body {
   margin: 0;
 
@@ -39,12 +26,14 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background-image: url('../photos/nav2Croped.jpeg');
+  background-image: url('C:/Users/PC/Desktop/YummyTreats/photos/nav2Croped.jpeg');
   background-size: cover;
   background-position: bottom;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
   height: 400px;
   backdrop-filter: blur(10px);
+
+
 }
 
 
@@ -107,6 +96,15 @@ body {
   padding-left: 5px;
 }
 
+/* .sticky {
+position: fixed;
+top: 0;
+width: 100%;
+} */
+/* .sticky + .content {
+padding-top: 60px;
+} */
+
 
 /* Slideshow */
 /* Slideshow container */
@@ -146,6 +144,20 @@ body {
   top: 0;
 }
 
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
 
 /* Fading animation */
 .fade {
@@ -405,7 +417,6 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
 }
-
 
 .bookPhoto::before {
   content: "";
