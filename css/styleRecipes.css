@@ -101,6 +101,9 @@ body {
   margin: auto;
   object-fit: none;
 }
+.fade:not(.show) {
+  opacity: 1 !important;
+}
 
 /* Next & previous buttons */
 .prev,
