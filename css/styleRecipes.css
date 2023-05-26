@@ -10,21 +10,18 @@ img {
   vertical-align: middle;
 }
 
-@font-face {
-  font-family: 'Inconsolata';
-  src: url('/path/to/inconsolata.woff2') format('woff2'),
-    url('/path/to/inconsolata.woff') format('woff'),
-    url('/path/to/inconsolata.ttf') format('truetype');
+  /* @font-face {
+   font-family: 'Inconsolata';
+  src: url('../YummyTreats/fonts/Inconsolata/Inconsolata_Condensed-Regular.ttf') format('truetype'); 
+    
 
-  font-family: 'Nanum Gothic';
-  src: url('/path/to/nanumgothic.woff2') format('woff2'),
-    url('/path/to/nanumgothic.woff') format('woff'),
-    url('/path/to/nanumgothic.ttf') format('truetype');
+   font-family: 'Nanum Gothic';
+  src: url('../YummyTreats/fonts/Nanum/NanumGothic-Bold.ttf') format('truetype'),
+    url('../YummyTreats/fonts/Nanum/NanumGothic-Regular.ttf') format('truetype'),
+    url('../YummyTreats/fonts/Nanum/NanumGothic-ExtraBold.ttf') format('truetype'); 
 
-  font-family: 'Lato';
-  src: url('path/to/lato.woff2') format('woff2'),
-    url('path/to/lato.woff') format('woff');
-}
+}  */
+ 
 
 
 body {
@@ -342,7 +339,7 @@ body {
 }
 
 .shefDescriptionp1 {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   font-weight: 300;
 }
 
@@ -395,7 +392,7 @@ body {
 
 .bookPhoto::before {
   content: "";
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
