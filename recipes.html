@@ -47,7 +47,7 @@
         <h4>Soup Dumplings and Chinese Sticky Rice</h4>
         <p>Easy to follow 1 hours recipes that tastes delicious. Spices were bought from India and traded around Europe
           and Asia. </p>
-        <button class="read-more-btn">Read More</button>
+        <button class="read-more-btn" onclick="navigateToPage()">Read More</button>
 
       </div>
     </div>
@@ -327,6 +327,13 @@
 
       slides[slideIndex - 1].style.display = "block";
     }
+
+
+    /*buton*/
+    function navigateToPage() {
+    // Redirect to the desired page
+    window.location.href = 'soup.html';
+  }
 
   </script>
 
