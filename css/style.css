@@ -3,18 +3,15 @@
 }
 
 .mySlides {
-  display: none
+  display: none;
 }
 
 img {
   vertical-align: middle;
 }
 
-
 body {
   margin: 0;
-
-
 }
 
 .contentiNav {
@@ -26,16 +23,13 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background-image: url('C:/Users/PC/Desktop/YummyTreats/photos/nav2Croped.jpeg');
+  background-image: url("../photos/nav2Croped.jpeg");
   background-size: cover;
   background-position: bottom;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   height: 400px;
   backdrop-filter: blur(10px);
-
-
 }
-
 
 .slogan {
   text-align: center;
@@ -43,7 +37,6 @@ body {
   font-size: 30px;
   margin-top: 100px;
   color: white;
-
 }
 
 .logo {
@@ -54,19 +47,15 @@ body {
   font-weight: 400;
   font-family: "Shadows Into Light", cursive;
   font-size: 30px;
-
-
 }
 
 #navMenu {
   display: inline;
-
 }
 
 #navMenu1 li {
   list-style: none;
   display: inline;
-
 }
 
 #navMenu1 li a {
@@ -79,13 +68,10 @@ body {
 }
 
 #navMenu1 li a:hover {
-  color: rgb(239, 233, 170);
-
+  color: #0f3d3e;
 }
 
-
 .mb-3 {
-
   margin-top: 35px;
   margin-right: 30px;
 }
@@ -105,7 +91,6 @@ width: 100%;
 padding-top: 60px;
 } */
 
-
 /* Slideshow */
 /* Slideshow container */
 .slideshow-container {
@@ -122,7 +107,6 @@ padding-top: 60px;
   height: auto;
   object-fit: contain;
 }
-
 
 /* Caption text */
 .text {
@@ -167,34 +151,28 @@ padding-top: 60px;
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {
-    font-size: 11px
+    font-size: 11px;
   }
 }
 
 .whatsNew {
-
   text-align: center;
   font-family: "Shadows Into Light", cursive;
   font-size: 30px;
   margin-top: 50px;
   color: black;
-
-
 }
-
-
-
 
 .NewsContainer {
   display: flex;
@@ -202,7 +180,7 @@ padding-top: 60px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-left: 200px;
-  margin-right: 200px
+  margin-right: 200px;
 }
 
 .row {
@@ -223,11 +201,10 @@ padding-top: 60px;
 
 /* wahtsnew photos */
 
-
 .Nphoto {
   position: relative;
   overflow: hidden;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .Nphoto::before {
@@ -240,12 +217,10 @@ padding-top: 60px;
   background-color: rgba(255, 255, 255, 0);
   opacity: 0;
   transition: opacity 0.3s ease;
-
 }
 
 .Nphoto:hover::before {
   opacity: 0.6;
-
 }
 
 .Nphoto img {
@@ -254,11 +229,9 @@ padding-top: 60px;
   max-width: 250px;
   height: 350px;
   transition: transform 0.3s ease;
-
 }
 
 .Nphoto:hover img {
-
   transform: scale(1.05);
 }
 
@@ -267,7 +240,6 @@ padding-top: 60px;
   text-align: center;
   max-width: 250px;
 }
-
 
 /*Recipe collections*/
 
@@ -279,7 +251,6 @@ padding-top: 60px;
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
-
 }
 
 .title {
@@ -291,7 +262,6 @@ padding-top: 60px;
   align-items: center;
   justify-content: center;
   font-family: "Shadows Into Light", cursive;
-
 }
 
 .recipe-list {
@@ -300,7 +270,6 @@ padding-top: 60px;
   flex-direction: column;
   padding: 0;
   margin-left: 30px;
-
 }
 
 .recipe-list li {
@@ -322,13 +291,13 @@ padding-top: 60px;
 
 .recipe-list li a:hover {
   background-color: #f2f2f2;
-  color: #0F3D3E;
+  color: #0f3d3e;
 }
 
 .email-signup {
   margin-top: 20px;
   margin-left: 30px;
-  background-color: #0F3D3E;
+  background-color: #0f3d3e;
   padding: 50px;
   padding-left: 80px;
   padding-right: 80px;
@@ -358,7 +327,7 @@ padding-top: 60px;
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 20px;
-  background-color: #FED049;
+  background-color: #fed049;
   border: none;
   text-decoration: none;
   color: #333;
@@ -374,7 +343,7 @@ padding-top: 60px;
 
 /*footer*/
 .footer {
-  background-color: #0F3D3E;
+  background-color: #0f3d3e;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -394,28 +363,24 @@ padding-top: 60px;
   text-decoration: underline;
 }
 
-
 .bookContainer {
   display: flex;
   align-items: center;
   margin-top: 60px;
   background-color: #f2f2f2;
-
 }
 
 .bookPhoto {
-
   margin-top: 30px;
   margin-left: 280px;
   margin-bottom: 30px;
-
 }
 
 .bookPhoto img {
   width: 100%;
   max-width: 300px;
   overflow: hidden;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
 }
 
 .bookPhoto::before {
@@ -428,12 +393,10 @@ padding-top: 60px;
   background-color: rgba(255, 255, 255, 0);
   opacity: 0;
   transition: opacity 0.3s ease;
-
 }
 
 .bookPhoto:hover::before {
   opacity: 0.6;
-
 }
 
 .bookPhoto img {
@@ -442,12 +405,10 @@ padding-top: 60px;
   max-width: 250px;
   height: 350px;
   transition: transform 0.3s ease;
-
 }
 
 .bookPhoto:hover img {
   transform: scale(1.05);
-
 }
 
 .DescriptionBook {
@@ -464,7 +425,6 @@ padding-top: 60px;
 .bookTitleP {
   font-weight: 400;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 .bookTitlePp {
@@ -482,7 +442,7 @@ padding-top: 60px;
   color: #333;
   text-decoration: none;
   border-radius: 4px;
-  border: 2px solid #FED049;
+  border: 2px solid #fed049;
   transition: background-color 0.3s ease;
 }
 
@@ -490,9 +450,7 @@ padding-top: 60px;
   background-color: #f7bc34;
 }
 
-
 /*video*/
-
 
 .videoContainer {
   background-color: #ffff;
@@ -501,20 +459,15 @@ padding-top: 60px;
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
-
 }
 
 .Video {
   width: 100%;
   max-width: 300px;
   margin-top: 20px;
-
-
 }
 
 .Video video {
-
-
   max-width: 400px;
   width: 100%;
 }
@@ -522,11 +475,9 @@ padding-top: 60px;
 .pjesa a {
   text-decoration: none;
   color: black;
-
 }
 
 .pjesa:hover a {
-  color: #0F3D3E;
+  color: #0f3d3e;
   text-decoration: underline;
-
 }
