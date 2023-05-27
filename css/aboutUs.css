@@ -107,7 +107,6 @@ body {
   border-radius: 4px;
   letter-spacing: 0.5px;
   transition: 0.3s ease-in;
-  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -287,7 +286,7 @@ body {
 
 .biography-box .description-text {
   text-transform: uppercase;
-  color: #0f3d3e;
+  color: #588157;
 }
 
 /*Contact button on about us page*/
