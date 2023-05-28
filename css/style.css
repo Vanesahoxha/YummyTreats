@@ -452,6 +452,8 @@ padding-top: 60px;
 }
 
 .get-book-button:hover {
+  text-decoration: none;
+  color: white;
   background-color: #588157;
 }
 
@@ -496,11 +498,10 @@ padding-top: 60px;
   text-decoration: underline;
 }
 
-.container{
+.container {
   max-width: 200px;
   display: flex;
   justify-content: flex-end;
-
 }
 
 /* .searchbar{

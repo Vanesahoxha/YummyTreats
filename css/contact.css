@@ -155,6 +155,7 @@ h3 {
 form {
   width: 100%;
   max-width: 800%;
+  margin-bottom: 30px;
 }
 
 .form-group.inline {
@@ -208,13 +209,15 @@ input[type="submit"]:hover {
   margin-right: 100px;
 }
 
+.map {
+  margin-bottom: -5px;
+}
 /*footer*/
 .footer {
   background-color: #0f3d3e;
   color: #fff;
   padding: 20px;
   text-align: center;
-  margin-top: 40px;
 }
 
 .footer p {
