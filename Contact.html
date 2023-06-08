@@ -12,6 +12,11 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!-- FontAwesome Library CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/blobz.css" />
     <link rel="stylesheet" href="assets/blobz.min.css" />
   </head>
@@ -29,17 +34,17 @@
           <li><a href="getOurBook.html">Get Our Book</a></li>
         </ul>
       </div>
-      <div class="mb-3">
-        <input
-          type="search"
-          class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-orange-700 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-          id="SearchNav"
-          placeholder="Search"
-        />
-        <img
-          src="C:\Users\PC\Desktop\YummyTreats\search.png"
-          style="padding-left: 4px; margin-top: 4px; height: 20px; color: white"
-        />
+      <div class="search">
+        <input type="text" class="search__input" placeholder="Type your text" />
+        <button class="search__button">
+          <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+              ></path>
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -71,7 +76,7 @@
           resource for all things food!
         </p>
 
-        <div class="ContactInformation">
+        <!-- <div class="ContactInformation">
           <ul>
             <li>
               Email:
@@ -80,12 +85,101 @@
             <li>Phone: +1 (555) 123-4567</li>
             <li>Address: 456 Gourmet Avenue, City, State, ZIP</li>
           </ul>
+        </div> -->
+      </div>
+    </div>
+    <div class="contact-info space">
+      <div class="center mb-30">
+        <h2>We are looking forward to your contact!</h2>
+      </div>
+      <div class="message"></div>
+      <div class="flex responsive-flex">
+        <form method="POST" id="contactForm" class="contact-form" name="form">
+          <div class="form-wrapper">
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="main-input"
+              />
+              <div id="name-error" class="text-error"></div>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="surname"
+                placeholder="Surname"
+                class="main-input"
+              />
+              <div id="surname-error" class="text-error"></div>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-Mail"
+                class="main-input"
+              />
+              <div id="email-error" class="text-error"></div>
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                id="message"
+                cols="60"
+                rows="5"
+                placeholder="Message..."
+                class="main-input main-textarea"
+              ></textarea>
+              <div id="message-error" class="text-error"></div>
+            </div>
+            <div class="form-group-submit-wrapper flex">
+              <input
+                type="submit"
+                name="submit"
+                class="btn"
+                id="submitBtn"
+                value="Send"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="contact-box-info">
+          <div class="box-wrapper">
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://goo.gl/maps/rMLDY7TiSEHAyteJ9" target="_blank">
+                  <span class="icon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                  YummyTreats <br />
+                  Jakove Xoxa 105 <br />
+                  10000 Pristina
+                </a>
+              </li>
+              <li>
+                <a href="tel:+38349111222">
+                  <span class="icon">
+                    <i class="fa fa-mobile"></i>
+                  </span>
+                  + 383 49 111 222
+                </a>
+              </li>
+              <li>
+                <a href="mailto:yummytreats@gmail.com">
+                  <span class="icon">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  yummytreats@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-
-    <h3>Drop a message</h3>
-    <form action="submit.php" method="post">
+    <!-- <form action="submit.php" method="post">
       <div class="formGroup">
         <div class="form-group inline">
           <label for="name">You name</label>
@@ -104,7 +198,7 @@
       </div>
 
       <input type="submit" value="Send Message" />
-    </form>
+    </form> -->
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.162381558395!2d21.12370785217964!3d42.666437879992586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPrishtin%C3%AB!5e0!3m2!1ssq!2s!4v1595352926798!5m2!1ssq!2s"
