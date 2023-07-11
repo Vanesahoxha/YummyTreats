@@ -1,202 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../YummyTreats/css/cauliflower.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
-</head>
-<body>
-
+    <link href="../YummyTreats/css/cauliflower.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=ABeeZee"
+      rel="stylesheet"/>
+    <script src="https://pixijs.download/release/pixi.js"></script>
+   
+  </head>
+  <body>
     <div class="navContainer" id="Ncontainer">
-        <div class="logo">
-          <img class="logo1" src="YummyLogowhite.png">
-    
-        </div>
-        <div id="navMenu">
-          <ul id="navMenu1" style="padding-top: 30px;">
-    
-    
-    
-    
-            <li><a class="" href="index.html">Home</a> </li>
-            <li><a href="recipes.html">Recipes</a> </li>
-            <li><a href="aboutUs.html">About</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-    
-          </ul>
-    
-        </div>
-        <div class="search">
-          <input type="text" class="search__input" placeholder="Type your text">
-          <button class="search__button">
-              <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
-                  <g>
-                      <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
-                  </g>
-              </svg>
-          </button>
+      <div class="logo">
+        <img class="logo1" src="YummyLogowhite.png" />
       </div>
+      <div id="navMenu">
+        <ul id="navMenu1" style="padding-top: 30px">
+          <li><a class="" href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="getOurBook.html">Get Our Book</a></li>
+        </ul>
+      </div>
+      <div class="mb-3">
+        <input
+          type="search"
+          class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-orange-700 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+          id="SearchNav"
+          placeholder="Search"
+        />
+        <img
+          src="C:\Users\PC\Desktop\YummyTreats\search.png"
+          style="padding-left: 4px; margin-top: 4px; height: 20px; color: white"
+        />
+      </div>
+    </div>
 
-
-<div class="photo-container">
-    <img src="./photos/cauliflower2.jpg" alt="Photo">
-    <h1 class="photo-caption">Cauliflower Rice</h1>
-  </div>
+    <div class="photo-container">
+      <img src="./photos/cauliflower2.jpg" alt="Photo" />
+      <h1 class="photo-caption">Cauliflower rice</h1>
+    </div>
 
     <div class="author">
-        <div class="chef">
-          <img style="height:70px; width:auto; border-radius: 50%;" src="../YummyTreats/photos/chef.jpg ">
-        </div>
-        <div class="chefDescritpion">
-          <p class="shefDescriptionp1" style="margin-bottom:0px; padding-bottom:0px ; ">Febrian Zakaria</p>
-
-          <p class="shefDescriptionp2" style="margin-top:0px; padding-top:0px ;"> April 08, 2023</p>
-        </div>
+      <div class="chef">
+        <img
+          style="height: 70px; width: auto; border-radius: 50%"
+          src="../YummyTreats/photos/chef.jpg "
+        />
       </div>
-      <hr class="custom-line">
+      <div class="chefDescritpion">
+        <p
+          class="shefDescriptionp1"
+          style="margin-bottom: 0px; padding-bottom: 0px"
+        >
+          Febrian Zakaria
+        </p>
 
-      <div class="centered-container">
-        <p class="SoupDescritpion" style="font-family: 'ABeeZee';">Easy to follow 1-hour recipes that taste delicious. Spices were bought from India and traded around Europe and Asia. Indian cuisine has influenced other cuisines across the world.
-            <br>
-            <br>
-            The literal translation of Nasi Goreng is “fried rice” in Indonesian and Malaysian – and that’s exactly what it is! It’s mainly rice with just a little bit of meat and just onion for the vegetables. The thing that distinguishes it from other Fried Rice dishes is the sauce which is made with kecap manis, a sweet soy sauce that stains the rice dark brown and caramelises the rice when it cooks.
-            <br><br>
-
-You may have made a cinnamon roll french toast casserole or french toast bake, but those can take a long time to make. With the instant pot craze going on, we thought we would try to shorten the preparation time needed for traditional french toast bakes! We love our instant pot and use it for dinners all the time. We have even used it for dessert with our Instant Pot Monkey Bread. The ease and quickness of it are perfect for our busy lifestyle.
+        <p class="shefDescriptionp2" style="margin-top: 0px; padding-top: 0px">
+          April 08, 2023
         </p>
       </div>
+    </div>
+    <hr class="custom-line" />
 
 
+    <script>
 
-<div class="ingredientsContainer">
+      const app = new PIXI.Application({ backgroundAlpha: 0, resizeTo: window });
+
+      document.body.appendChild(app.view);
+
+      const button = new PIXI.Graphics()
+          .beginFill(0x0, 0.5)
+          .drawRoundedRect(0, 0, 100, 100, 10)
+          .endFill()
+          .beginFill(0xffffff)
+          .moveTo(36, 30)
+          .lineTo(36, 70)
+          .lineTo(70, 50);
+
+      button.x = (app.screen.width - button.width) / 2;
+      button.y = (app.screen.height - button.height) / 2;
+
+      button.interactive = true;
+      button.cursor = 'pointer';
+
+      app.stage.addChild(button);
+
+      button.on('pointertap', onPlayVideo);
+
+      function onPlayVideo()
+      {
+          button.destroy();
+
+          const texture = PIXI.Texture.from('./videos/videoFood.mp4');
+
+          const videoSprite = new PIXI.Sprite(texture);
+
+          videoSprite.width = app.screen.width;
+          videoSprite.height = app.screen.height / 1.5 ;
+
+          app.stage.addChild(videoSprite);
+      }
+      </script>
+
+    <div class="centered-container">
+
+      
+      <p class="SoupDescritpion" style="font-family: 'ABeeZee'">
+        Easy to follow 1-hour recipes that taste delicious. Spices were bought
+        from India and traded around Europe and Asia. Indian cuisine has
+        influenced other cuisines across the world.
+        <br />
+        <br />
+        The literal translation of Nasi Goreng is “fried rice” in Indonesian and
+        Malaysian – and that’s exactly what it is! It’s mainly rice with just a
+        little bit of meat and just onion for the vegetables. The thing that
+        distinguishes it from other Fried Rice dishes is the sauce which is made
+        with kecap manis, a sweet soy sauce that stains the rice dark brown and
+        caramelises the rice when it cooks.
+        <br /><br />
+
+        You may have made a cinnamon roll french toast casserole or french toast
+        bake, but those can take a long time to make. With the instant pot craze
+        going on, we thought we would try to shorten the preparation time needed
+        for traditional french toast bakes! We love our instant pot and use it
+        for dinners all the time. We have even used it for dessert with our
+        Instant Pot Monkey Bread. The ease and quickness of it are perfect for
+        our busy lifestyle.
+      </p>
+    </div>
+
+    <div class="ingredientsContainer">
       <div class="details">
         <div class="servings">
-            <img src="./icons/serving-dish.png" alt="serving">
-            <h3>Servings</h3>
-            <p>4 Servings</p>
+          <img src="./icons/serving-dish.png" alt="serving" />
+          <h3>Servings</h3>
+          <p>4 Servings</p>
         </div>
         <div class="prepTime">
-            <img src="./icons/clock.png">
-            <h3>Prep time</h3>
-            <p>30 minutes</p>
+          <img src="./icons/clock.png" />
+          <h3>Prep time</h3>
+          <p>30 minutes</p>
         </div>
         <div class="cookingTime">
-            <img src="./icons/cooking.png">
-            <h3>Cooking time</h3>
-            <p>40 minutes</p>
+          <img src="./icons/cooking.png" />
+          <h3>Cooking time</h3>
+          <p>40 minutes</p>
         </div>
         <div class="calories">
-            <img src="./icons/calories.png">
-            <h3>Calories</h3>
-            <p>300 kcal</p>
+          <img src="./icons/calories.png" />
+          <h3>Calories</h3>
+          <p>300 kcal</p>
         </div>
       </div>
-      <div class="container"v>
-        <p style="margin-top: 30px; margin-left: 30px; font-size: large; font-weight: 600; font-family:Arial, Helvetica, sans-serif">Ingredients</p>
-        
-        <form class="forma" >
+      <div class="container" v>
+        <p
+          style="
+            margin-top: 30px;
+            margin-left: 30px;
+            font-size: large;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+          "
+        >
+          Ingredients
+        </p>
+
+        <form class="forma">
           <div class="checkbox">
-            <label><input type="checkbox" value="" class="checkbox">4 cups French bread (cut into bite-size pieces and dried overnight)</label>
+            <label
+              ><input type="checkbox" value="" class="checkbox" />4 cups French
+              bread (cut into bite-size pieces and dried overnight)</label
+            >
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="" class="checkbox">3 eggs</label>
+            <label
+              ><input type="checkbox" value="" class="checkbox" />3 eggs</label
+            >
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="" class="checkbox">3/4 cups milk</label>
+            <label
+              ><input type="checkbox" value="" class="checkbox" />3/4 cups
+              milk</label
+            >
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="" class="checkbox">1 teaspoon vanilla</label>
+            <label
+              ><input type="checkbox" value="" class="checkbox" />1 teaspoon
+              vanilla</label
+            >
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="" class="checkbox">1/4 cup sugar</label>
+            <label
+              ><input type="checkbox" value="" class="checkbox" />1/4 cup
+              sugar</label
+            >
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="" class="checkbox">1/4 cup brown sugar</label>
+            <label
+              ><input type="checkbox" value="" class="checkbox" />1/4 cup brown
+              sugar</label
+            >
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="" class="checkbox">2 teaspoons cinnamon</label>
+            <label
+              ><input type="checkbox" value="" class="checkbox" />2 teaspoons
+              cinnamon</label
+            >
           </div>
         </form>
       </div>
 
       <div class="directions">
-        <p style="margin-top: 30px; margin-left: 20px; font-size: large; font-weight: 600; font-family:Arial, Helvetica, sans-serif">Directions</p>
-      
-      <ol>
-        <li>Soak chopped onions in water: Place the chopped onions in a small bowl of water. This will help take the edge off the onions. Let sit while you prepare the rest of the salad.</li>
-      <li>Blanch the green beans: Bring a large pot of salted water to a boil (2 Tbsp salt for 2 quarts of water). Add the green beans to the water and blanch only for about 2 minutes or so, until the beans are just barely cooked through, but still crisp.</li>
-    <li>Bring a large pot of salted water to a boil (2 Tbsp salt for 2 quarts of water). Add the green beans to the water and blanch only for about 2 minutes or so, until the beans are just barely cooked through, but still crisp. Fresh young beans should cook quickly. Older, tougher beans may take longer. While the beans are cooking, prepare a large bowl of ice water. When the beans are ready, use a slotted spoon to remove them from the boiling water to the ice water to stop the cooking. Drain the green beans and the red onions.</li>
-    <li> Toss with red onion, balsamic, Parmesan: Place the green beans, red onion, and chopped basil in a large bowl. Sprinkle in the olive oil, toss to coat. Sprinkle in the balsamic and Parmesan cheese. Toss to combine. Season to taste with salt and freshly ground black pepper.</li>
-    <li>Chill until ready to serve.  Overlap the cucumber and tomato on the side of each plate, sprinkle over the crispy fried onions.</li>
-    </ol>
-      
-    
-    
-    
-    </div>
-    
-    <div class="warning">
-        
-        <p> Kid-Friendly Adaptation: Cook the chicken at low heat in broth instead of buffalo sauce. Use fresh ingredients for better taste. Put some of the chicken aside for the kiddos (plain, no sauce) and toss the remaining chicken with the buffalo sauce before you broil it.</p>
+        <p
+          style="
+            margin-top: 30px;
+            margin-left: 20px;
+            font-size: large;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+          "
+        >
+          Directions
+        </p>
+
+        <ol>
+          <li>
+            Soak chopped onions in water: Place the chopped onions in a small
+            bowl of water. This will help take the edge off the onions. Let sit
+            while you prepare the rest of the salad.
+          </li>
+          <li>
+            Blanch the green beans: Bring a large pot of salted water to a boil
+            (2 Tbsp salt for 2 quarts of water). Add the green beans to the
+            water and blanch only for about 2 minutes or so, until the beans are
+            just barely cooked through, but still crisp.
+          </li>
+          <li>
+            Bring a large pot of salted water to a boil (2 Tbsp salt for 2
+            quarts of water). Add the green beans to the water and blanch only
+            for about 2 minutes or so, until the beans are just barely cooked
+            through, but still crisp. Fresh young beans should cook quickly.
+            Older, tougher beans may take longer. While the beans are cooking,
+            prepare a large bowl of ice water. When the beans are ready, use a
+            slotted spoon to remove them from the boiling water to the ice water
+            to stop the cooking. Drain the green beans and the red onions.
+          </li>
+          <li>
+            Toss with red onion, balsamic, Parmesan: Place the green beans, red
+            onion, and chopped basil in a large bowl. Sprinkle in the olive oil,
+            toss to coat. Sprinkle in the balsamic and Parmesan cheese. Toss to
+            combine. Season to taste with salt and freshly ground black pepper.
+          </li>
+          <li>
+            Chill until ready to serve. Overlap the cucumber and tomato on the
+            side of each plate, sprinkle over the crispy fried onions.
+          </li>
+        </ol>
       </div>
-      
 
+      <div class="warning">
+        <p>
+          Kid-Friendly Adaptation: Cook the chicken at low heat in broth instead
+          of buffalo sauce. Use fresh ingredients for better taste. Put some of
+          the chicken aside for the kiddos (plain, no sauce) and toss the
+          remaining chicken with the buffalo sauce before you broil it.
+        </p>
+      </div>
     </div>
 
+    <hr class="custom-line" />
 
-
-    <hr class="custom-line">
-
-    <h3 style="font-family: 'ABeeZee'; margin-left: 320px; margin-top: 40px; margin-bottom: 20px;">Leave a comment</h3>
+    <h3
+      style="
+        font-family: 'ABeeZee';
+        margin-left: 320px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      "
+    >
+      Leave a comment
+    </h3>
     <div class="container1">
-        <form action="/action_page.php">
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">First Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            </div>
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Comments</label>
-            </div>
-            <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Leave a message.." style="height:200px"></textarea>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
           </div>
-          <div class="row">
-            <input type="submit" value="Post comment">
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
           </div>
-        </form>
-      </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Comments</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Leave a message.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Post comment" />
+        </div>
+      </form>
+    </div>
 
+    <footer class="footer">
+      <p>&copy; 2023 YummyTreats. All rights reserved.</p>
+      <p>
+        Designed and developed by <a href="#">Vanesa Hoxha</a> &
+        <a href="#">Shkurta Hoxha</a>
+      </p>
+    </footer>
 
-      <footer class="footer">
-        <p>&copy; 2023 YummyTreats. All rights reserved.</p>
-        <p>Designed and developed by <a href="#">Vanesa Hoxha</a> & <a href="#">Shkurta Hoxha</a></p>
-      </footer>
-   
-
-<script>
-
-</script>      
-</body>
+    <script></script>
+  </body>
 </html>
