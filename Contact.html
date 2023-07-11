@@ -12,14 +12,14 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script src="https://pixijs.download/release/pixi.js"></script>
+
     <!-- FontAwesome Library CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.1.3/pixi.min.js"></script>
-
-
   </head>
   <body>
     <div class="navContainer" id="Ncontainer">
@@ -76,17 +76,6 @@
           Join us on this flavorful journey and let Tasty Bites be your go-to
           resource for all things food!
         </p>
-
-        <!-- <div class="ContactInformation">
-          <ul>
-            <li>
-              Email:
-              <a href="mailto:info@yummytreat.com">info@yummytreat.com</a>
-            </li>
-            <li>Phone: +1 (555) 123-4567</li>
-            <li>Address: 456 Gourmet Avenue, City, State, ZIP</li>
-          </ul>
-        </div> -->
       </div>
     </div>
     <div class="contact-info space">
@@ -180,41 +169,7 @@
         </div>
       </div>
     </div>
-    <!-- <form action="submit.php" method="post">
-      <div class="formGroup">
-        <div class="form-group inline">
-          <label for="name">You name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-
-        <div class="form-group2 inline">
-          <label for="email">Your email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-      </div>
-
-      <div class="form-group3">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-
-      <input type="submit" value="Send Message" />
-    </form> -->
-     <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.162381558395!2d21.12370785217964!3d42.666437879992586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPrishtin%C3%AB!5e0!3m2!1ssq!2s!4v1595352926798!5m2!1ssq!2s"
-        width="100%"
-        height="450"
-        ;
-        style="border: 0; margin-bottom: -4px"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
-    </div>
-
-  
-
+    <div id="map" style="width: 100%; height: 100%"></div>
     <footer class="footer">
       <p>&copy; 2023 YummyTreats. All rights reserved.</p>
       <p>
@@ -222,10 +177,32 @@
         <a href="#">Shkurta Hoxha</a>
       </p>
     </footer>
+    <script lang="js">
+      // Create a PixiJS application
+      var app = new PIXI.Application({
+          width: window.innerWidth,
+          height: window.innerHeight,
+          antialias: true,
+          transparent: true, // Set transparent to true to see the map
+      });
 
-    <script>
-    
+      // jepja foton e mapit
+      var mapTexture = PIXI.Texture.from("https://i.imgur.com/KQR7FEZ.png");
+      var mapSprite = new PIXI.Sprite(mapTexture);
+      mapSprite.anchor.set(0.5);
+      mapSprite.position.set(app.screen.width / 2, app.screen.height / 2);
+      mapSprite.scale.set(1); // Adjust the scale as needed
+      app.stage.addChild(mapSprite);
 
+      // Update the map on window resize
+      window.addEventListener("resize", function () {
+          app.renderer.resize(window.innerWidth, window.innerHeight);
+          mapSprite.position.set(app.screen.width / 2, app.screen.height / 2);
+      });
+
+      // Qyky container qitu osht elementi ku po don me e ngjit aplikacionin, n'rastin tem osht div me id map
+      var pixiContainer = document.getElementById("map");
+      pixiContainer.appendChild(app.view);
     </script>
   </body>
 </html>
